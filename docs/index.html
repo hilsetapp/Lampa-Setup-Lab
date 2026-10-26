@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Каталог расширений Lampa с источниками сведений, устройствами и честным статусом проверки. Инструкции для Android TV, Samsung Tizen и LG webOS.">
+  <meta name="theme-color" content="#101311">
+  <title>Плагины Lampa 2026: каталог по устройствам и статусу проверки</title>
+  <link rel="stylesheet" href="assets/site.css">
+  <script src="data/catalog-data.js"></script>
+  <script defer src="assets/app.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Перейти к содержимому</a>
+<header class="topbar"><div class="wrap topbar-inner">
+  <a class="brand" href="index.html"><span class="brand-mark">L</span><span>Lampa Setup Lab</span></a>
+  <nav class="nav" aria-label="Основная навигация"><a href="#catalog">Каталог</a><a href="#devices">Устройства</a><a href="how-to-add-plugin.html">Как установить</a></nav>
+</div></header>
+<main id="main">
+  <section class="hero"><div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">Каталог расширений Lampa</div>
+      <h1>Найди плагин для своей Lampa</h1>
+      <p>Выбирай по задаче и устройству. У каждого расширения показан источник сведений и честно указан уровень проверки.</p>
+      <form class="searchbar" action="#catalog" onsubmit="return false">
+        <input id="plugin-search" type="search" placeholder="Например: синхронизация, Shikimori, Android TV" aria-label="Поиск расширений">
+        <button class="button" type="button" onclick="document.querySelector('#catalog').scrollIntoView()">Найти расширение</button>
+      </form>
+    </div>
+    <aside class="hero-note"><strong>Не называем ссылку проверенной, пока её не проверили</strong><p>Сейчас карточки собраны по страницам авторов и каталогам сообщества. Это отмечено отдельно. Проверок на реальных телевизорах пока нет.</p><a href="verification.html">Как устроены статусы проверки →</a></aside>
+  </div></section>
+
+  <section class="section" id="catalog"><div class="wrap">
+    <div class="section-head"><div><h2>Расширения</h2><p>Ищи по назначению, устройству или названию.</p></div><span class="tag" id="result-count">Загрузка…</span></div>
+    <div class="filters" aria-label="Фильтры каталога">
+      <select id="platform-filter" aria-label="Фильтр по устройству"><option value="">Все устройства</option><option value="android_tv">Android TV / Google TV</option><option value="dune_hd">Dune HD</option><option value="unspecified">Устройство не указано</option></select>
+      <select id="level-filter" aria-label="Фильтр по статусу проверки"><option value="">Все уровни проверки</option><option value="author_reported">Заявлено автором</option><option value="url_checked">Ссылка проверена</option><option value="loaded_in_lampa">Запущено в Lampa</option><option value="device_tested">Проверено на устройстве</option></select>
+    </div>
+    <div class="grid" id="plugin-results" aria-live="polite"></div>
+    <noscript><p class="noscript">Для поиска и фильтров включи JavaScript. Страницы с инструкциями остаются доступны без него.</p></noscript>
+  </div></section>
+
+  <section class="section" id="devices"><div class="wrap">
+    <div class="section-head"><div><h2>Настройка по устройствам</h2><p>Сначала проверь страницу своего телевизора. Совместимость не угадываем.</p></div></div>
+    <div class="device-grid">
+      <a class="device-card" href="lampa-samsung-tizen.html"><h3>Samsung Tizen</h3><p>Что известно о расширениях, установке и проверке на телевизорах Samsung.</p></a>
+      <a class="device-card" href="lampa-lg-webos.html"><h3>LG webOS</h3><p>Отдельная памятка для Lampa на телевизорах LG и приставках webOS.</p></a>
+      <a class="device-card" href="lampa-android-tv.html"><h3>Android TV и Google TV</h3><p>Расширения, для которых авторы указали связку с Android TV или Google TV.</p></a>
+    </div>
+  </div></section>
+
+  <section class="section"><div class="wrap">
+    <div class="section-head"><div><h2>Что означает статус</h2><p>Статус относится к конкретному расширению, версии и устройству.</p></div></div>
+    <div class="trust-grid">
+      <div class="trust-item"><strong>Заявлено автором</strong><span>Описание есть в исходном проекте. Независимый запуск не подтверждён.</span></div>
+      <div class="trust-item"><strong>Ссылка проверена</strong><span>Адрес ответил на запрос в указанную дату. Это ещё не тест внутри Lampa.</span></div>
+      <div class="trust-item"><strong>Запущено в Lampa</strong><span>Есть воспроизводимая проверка загрузки расширения в приложении.</span></div>
+      <div class="trust-item"><strong>Проверено на устройстве</strong><span>Указаны модель телевизора, система и версия Lampa.</span></div>
+    </div>
+    <div class="callout"><strong>На старте все карточки имеют статус «Заявлено автором».</strong> Это честный каталог источников, а не обещание, что каждое расширение заработает на каждом телевизоре.</div>
+  </div></section>
+
+  <section class="section"><div class="wrap prose">
+    <h2>Частые вопросы</h2>
+    <h3>Как найти расширение для моей модели телевизора?</h3><p>Открой страницу платформы выше. Если модель телевизора или версия системы не указана в карточке, совместимость с ней пока не подтверждена.</p>
+    <h3>Можно ли доверять любому плагину из каталога?</h3><p>Нет. Каталог показывает источник, но не гарантирует безопасность чужого кода. Устанавливай только расширения, автору которых доверяешь, и не вводи секреты в непроверенные плагины.</p>
+    <h3>Почему нет отметки «работает»?</h3><p>Потому что для неё нужен конкретный тест. Ответ сайта по ссылке сам по себе не доказывает, что расширение загрузится в Lampa на Samsung, LG или Android TV.</p>
+  </div></section>
+</main>
+<footer class="footer"><div class="wrap footer-row"><span>Lampa Setup Lab - независимый каталог. Не связан с авторами Lampa или сторонних расширений.</span><span><a href="verification.html">Методика</a> · Исходники и данные - в репозитории проекта.</span></div></footer>
+</body>
+</html>

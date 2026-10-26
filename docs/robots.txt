@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://hilsetapp.github.io/Lampa-Setup-Lab/sitemap.xml
