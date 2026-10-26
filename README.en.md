@@ -1,5 +1,7 @@
 [English](README.en.md) | [Русский](README.md)
 
+**Live site:** [open the Lampa extension catalog](https://hilsetapp.github.io/Lampa-Setup-Lab/). No download or setup needed.
+
 # Lampa Setup Lab
 
 A device-oriented directory of Lampa extensions. Every entry shows where its information came from and how much has actually been tested. Author claims are not presented as independent verification.
