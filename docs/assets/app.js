@@ -5,6 +5,7 @@
 
   const search = document.querySelector('#plugin-search');
   const platform = document.querySelector('#platform-filter');
+  const category = document.querySelector('#category-filter');
   const level = document.querySelector('#level-filter');
   const count = document.querySelector('#result-count');
   const labels = {
@@ -17,6 +18,12 @@
   const esc = (value) => String(value ?? '').replace(/[&<>"']/g, ch => ({
     '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
   })[ch]);
+
+  if (category) {
+    [...new Set(catalog.map(item => item.category).filter(Boolean))]
+      .sort((a, b) => a.localeCompare(b, 'ru'))
+      .forEach(value => category.insertAdjacentHTML('beforeend', `<option value="${esc(value)}">${esc(value)}</option>`));
+  }
 
   function card(item) {
     const platforms = (item.platform_labels || []).map(x => `<span class="tag">${esc(x)}</span>`).join('');
@@ -39,13 +46,15 @@
   function render() {
     const q = (search?.value || '').trim().toLocaleLowerCase('ru');
     const selectedPlatform = platform?.value || '';
+    const selectedCategory = category?.value || '';
     const selectedLevel = level?.value || '';
     const filtered = catalog.filter(item => {
       const haystack = [item.name, item.summary, item.details, item.category, ...(item.platform_labels || [])].join(' ').toLocaleLowerCase('ru');
       const matchesQuery = !q || haystack.includes(q);
       const matchesPlatform = !selectedPlatform || (item.platforms || []).includes(selectedPlatform);
+      const matchesCategory = !selectedCategory || item.category === selectedCategory;
       const matchesLevel = !selectedLevel || item.verification?.level === selectedLevel;
-      return matchesQuery && matchesPlatform && matchesLevel;
+      return matchesQuery && matchesPlatform && matchesCategory && matchesLevel;
     });
     results.innerHTML = filtered.length ? filtered.map(card).join('') : '<div class="empty">Ничего не нашлось. Попробуй другой запрос или сними один из фильтров.</div>';
     if (count) count.textContent = `${filtered.length} ${filtered.length === 1 ? 'расширение' : 'расширений'}`;
@@ -61,8 +70,8 @@
     }));
   }
 
-  [search, platform, level].filter(Boolean).forEach(el => el.addEventListener('input', render));
-  [platform, level].filter(Boolean).forEach(el => el.addEventListener('change', render));
+  [search, platform, category, level].filter(Boolean).forEach(el => el.addEventListener('input', render));
+  [platform, category, level].filter(Boolean).forEach(el => el.addEventListener('change', render));
   document.querySelectorAll('[data-search]').forEach(link => link.addEventListener('click', () => {
     const term = link.dataset.search || '';
     if (search) { search.value = term; render(); document.querySelector('#catalog')?.scrollIntoView(); }

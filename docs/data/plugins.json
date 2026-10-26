@@ -5,19 +5,24 @@
     "summary": "Выводит списки Lampa на домашний экран Free My TV на том же телевизоре.",
     "details": "Плагин отправляет списки Lampa в Free My TV, чтобы открывать выбранные карточки с главного экрана Android TV или Google TV. Это не отдельный каталог фильмов и не плеер.",
     "category": "Домашний экран",
-    "platforms": ["android_tv"],
-    "platform_labels": ["Android TV", "Google TV"],
+    "platforms": [
+      "android_tv"
+    ],
+    "platform_labels": [
+      "Android TV",
+      "Google TV"
+    ],
     "plugin_url": "https://tinkerbells.github.io/lampa-plugins/free-my-tv.js",
     "project_url": "https://github.com/Tinkerbells/lampa-plugins",
     "evidence_url": "https://github.com/Tinkerbells/lampa-plugins",
     "verification": {
-      "level": "author_reported",
-      "checked_at": null,
+      "level": "url_checked",
+      "checked_at": "2026-10-27",
       "device": null,
-      "note": "Автор описывает связку с Free My TV на Android TV / Google TV. Независимая установка на телевизоре пока не проводилась."
+      "note": "Ссылка установки ответила HTTP 200 2026-10-27. Автор описывает связку Free My TV с Android TV / Google TV. Запуск Setup Lab на устройстве не проводился. Файл и доступные скрипты-зависимости прошли node --check. Плагин не запускался в приложении."
     },
     "source_note": "Описание и поддерживаемая связка указаны в README автора.",
-    "updated_at": "2026-10-26"
+    "updated_at": "2026-10-27"
   },
   {
     "id": "dune-local-progress",
@@ -25,19 +30,25 @@
     "summary": "Передаёт позицию просмотра между Lampa и внешним плеером Dune HD.",
     "details": "Репозиторий содержит отдельный плагин Lampa и нативный мост для Dune HD. Потребуется установить обе части и выполнить настройки, описанные автором.",
     "category": "Внешний плеер",
-    "platforms": ["dune_hd", "android_tv"],
-    "platform_labels": ["Dune HD", "Android Lampa"],
-    "plugin_url": "https://raw.githubusercontent.com/vladikshkwok/lampa-dune-plugins/main/plugins/dune-local-progress.js",
+    "platforms": [
+      "dune_hd",
+      "android_tv"
+    ],
+    "platform_labels": [
+      "Dune HD",
+      "Android Lampa"
+    ],
+    "plugin_url": "https://cdn.jsdelivr.net/gh/vladikshkwok/lampa-dune-plugins@main/plugins/dune-local-progress.js",
     "project_url": "https://github.com/vladikshkwok/lampa-dune-plugins",
     "evidence_url": "https://github.com/vladikshkwok/lampa-dune-plugins",
     "verification": {
-      "level": "author_reported",
-      "checked_at": null,
+      "level": "url_checked",
+      "checked_at": "2026-10-27",
       "device": null,
-      "note": "Автор описывает поддержку Dune HD и Android-версии Lampa. На конкретных моделях Dune HD команда Setup Lab не проверяла."
+      "note": "Ссылка установки ответила HTTP 200 2026-10-27. Авторская связка рассчитана на Dune HD и Android Lampa. На реальном устройстве не проверялась. Файл и доступные скрипты-зависимости прошли node --check. Плагин не запускался в приложении."
     },
-    "source_note": "Требования и адрес установки взяты из README автора.",
-    "updated_at": "2026-10-26"
+    "source_note": "Исходный код опубликован в репозитории автора; ссылка установки использует CDN jsDelivr вместо raw.githubusercontent.com.",
+    "updated_at": "2026-10-27"
   },
   {
     "id": "shikimori-catalog",
@@ -45,19 +56,23 @@
     "summary": "Добавляет в Lampa раздел с аниме-каталогом Shikimori.",
     "details": "Плагин показывает названия, постеры, текущие сезоны и анонсы, а выбранный тайтл открывает через карточку Lampa. Совместимость с конкретными моделями телевизоров отдельно не подтверждена.",
     "category": "Каталог",
-    "platforms": ["unspecified"],
-    "platform_labels": ["Модель устройства не указана"],
+    "platforms": [
+      "unspecified"
+    ],
+    "platform_labels": [
+      "Модель устройства не указана"
+    ],
     "plugin_url": "https://water-faq.github.io/lampa-plugins/Shikimori.js",
     "project_url": "https://github.com/Water-FAQ/lampa-plugins",
     "evidence_url": "https://github.com/Water-FAQ/lampa-plugins",
     "verification": {
-      "level": "author_reported",
-      "checked_at": null,
+      "level": "url_checked",
+      "checked_at": "2026-10-27",
       "device": null,
-      "note": "Функции описаны автором. В источнике не указана проверенная модель устройства."
+      "note": "Прямая ссылка установки ответила HTTP 200 2026-10-27. Плагин не запускался командой Setup Lab в Lampa и не проверялся на телевизоре. Файл и доступные скрипты-зависимости прошли node --check. Плагин не запускался в приложении."
     },
     "source_note": "Описание и ссылка установки взяты из README автора.",
-    "updated_at": "2026-10-26"
+    "updated_at": "2026-10-27"
   },
   {
     "id": "kids-age",
@@ -65,38 +80,724 @@
     "summary": "Подборки фильмов и мультфильмов по возрастным группам.",
     "details": "По описанию автора, плагин добавляет отдельный раздел и подборки по возрасту. Это не системная блокировка контента и не полноценный родительский контроль.",
     "category": "Подборки",
-    "platforms": ["unspecified"],
-    "platform_labels": ["Модель устройства не указана"],
+    "platforms": [
+      "unspecified"
+    ],
+    "platform_labels": [
+      "Модель устройства не указана"
+    ],
     "plugin_url": "https://cdn.jsdelivr.net/gh/mvinkarklins/lampa@main/kids_age.js",
     "project_url": "https://github.com/mvinkarklins/lampa",
     "evidence_url": "https://github.com/mvinkarklins/lampa",
     "verification": {
-      "level": "author_reported",
-      "checked_at": null,
+      "level": "url_checked",
+      "checked_at": "2026-10-27",
       "device": null,
-      "note": "Функция и ссылка установки описаны автором. Уровни рейтинга не проверялись Setup Lab."
+      "note": "Прямая ссылка установки ответила HTTP 200 2026-10-27. Плагин не запускался командой Setup Lab в Lampa и не проверялся на телевизоре. Файл и доступные скрипты-зависимости прошли node --check. Плагин не запускался в приложении."
     },
     "source_note": "Описание и ссылка установки взяты из README автора.",
-    "updated_at": "2026-10-26"
+    "updated_at": "2026-10-27"
   },
   {
-    "id": "account-sync",
-    "name": "Account Sync",
-    "summary": "Резервное копирование и синхронизация настроек Lampa по описанию каталога.",
-    "details": "Каталог LampaGuide описывает расширение как инструмент синхронизации и резервного копирования. Перед использованием проверь актуальные условия хранения и авторизацию в исходном проекте.",
-    "category": "Синхронизация",
-    "platforms": ["unspecified"],
-    "platform_labels": ["Модель устройства не указана"],
-    "plugin_url": "https://bylampa.github.io/account.js",
-    "project_url": "https://bylampa.github.io/account.js",
+    "id": "online-mod-nb557",
+    "name": "Онлайн МОД",
+    "summary": "Добавляет в Lampa дополнительные онлайн-источники и балансеры.",
+    "details": "Один из наиболее распространённых плагинов онлайн-просмотра. Доступность самих источников зависит от региона, сети и их владельцев.",
+    "category": "Онлайн-просмотр",
+    "platforms": [
+      "unspecified"
+    ],
+    "platform_labels": [
+      "Устройство не указано"
+    ],
+    "plugin_url": "https://nb557.github.io/plugins/online_mod.js",
+    "project_url": "https://github.com/nb557/plugins",
+    "evidence_url": "https://github.com/nb557/plugins",
+    "verification": {
+      "level": "url_checked",
+      "checked_at": "2026-10-27",
+      "device": null,
+      "note": "Прямая ссылка ответила HTTP 200 2026-10-27. Репозиторий автора обновлялся 25.10.2026. Ответ ссылки не подтверждает, что отдельные источники сейчас дают видео. Файл и доступные скрипты-зависимости прошли node --check. Плагин не запускался в приложении."
+    },
+    "source_note": "Назначение указано в репозитории NB557; в истории GitHub есть обновление от 25.10.2026.",
+    "updated_at": "2026-10-27"
+  },
+  {
+    "id": "imdb-alt-search",
+    "name": "Поиск IMDb",
+    "summary": "Добавляет IMDb как дополнительный источник поиска фильмов и сериалов.",
+    "details": "По описанию сообщества, плагин обращается к IMDb через внешний Media-IMDb API. Перед установкой учитывай, что запросы поиска будут идти через этот сервис.",
+    "category": "Поиск",
+    "platforms": [
+      "unspecified"
+    ],
+    "platform_labels": [
+      "Устройство не указано"
+    ],
+    "plugin_url": "https://nb557.github.io/plugins/alt_search.js",
+    "project_url": "https://github.com/nb557/plugins",
+    "evidence_url": "https://tv-ch.ru/lampa-plugins-for-control/",
+    "verification": {
+      "level": "url_checked",
+      "checked_at": "2026-10-27",
+      "device": null,
+      "note": "Прямая ссылка ответила HTTP 200 2026-10-27. Поиск использует внешний Media-IMDb API. Работа сервиса и совместимость с конкретной сборкой отдельно не проверялись. Файл и доступные скрипты-зависимости прошли node --check. Плагин не запускался в приложении."
+    },
+    "source_note": "Назначение описано в карточке плагина сообщества и файле NB557.",
+    "updated_at": "2026-10-27"
+  },
+  {
+    "id": "nb557-rating",
+    "name": "Рейтинги IMDb и Кинопоиск",
+    "summary": "Показывает рейтинги IMDb и Кинопоиска на карточках.",
+    "details": "Дополняет карточку фильма или сериала рейтингами. В некоторых сборках может пересекаться с уже установленными плагинами рейтингов.",
+    "category": "Рейтинги",
+    "platforms": [
+      "unspecified"
+    ],
+    "platform_labels": [
+      "Устройство не указано"
+    ],
+    "plugin_url": "https://nb557.github.io/plugins/rating.js",
+    "project_url": "https://github.com/nb557/plugins",
+    "evidence_url": "https://lampa.nnslvp.io/plugins/rating",
+    "verification": {
+      "level": "url_checked",
+      "checked_at": "2026-10-27",
+      "device": null,
+      "note": "Прямая ссылка ответила HTTP 200 2026-10-27. В каталоге сообщества есть активная карточка; наложение с другими рейтингами не тестировалось. Файл и доступные скрипты-зависимости прошли node --check. Плагин не запускался в приложении."
+    },
+    "source_note": "Назначение указано автором/в каталоге сообщества; URL опубликован в репозитории NB557.",
+    "updated_at": "2026-10-27"
+  },
+  {
+    "id": "not-mobile",
+    "name": "Режим без сенсорного управления",
+    "summary": "Отключает мобильный сенсорный режим, если он включился случайно.",
+    "details": "Небольшой переключатель поведения интерфейса для управления пультом или устройством без сенсорного экрана. Не ставь без необходимости на телефон или планшет.",
+    "category": "Управление",
+    "platforms": [
+      "unspecified"
+    ],
+    "platform_labels": [
+      "Устройство не указано"
+    ],
+    "plugin_url": "https://nb557.github.io/plugins/not_mobile.js",
+    "project_url": "https://github.com/nb557/plugins",
     "evidence_url": "https://lampaguide.com/plugins",
     "verification": {
-      "level": "author_reported",
-      "checked_at": null,
+      "level": "url_checked",
+      "checked_at": "2026-10-27",
       "device": null,
-      "note": "Описание найдено в каталоге сообщества. Владелец и модель устройства для независимой проверки не установлены."
+      "note": "Прямая ссылка ответила HTTP 200 2026-10-27. Файл меняет настройку сенсорного режима. Функция не проверялась внутри Lampa. Файл и доступные скрипты-зависимости прошли node --check. Плагин не запускался в приложении."
     },
-    "source_note": "Сведения о назначении взяты из каталога сообщества, а не из независимого теста.",
-    "updated_at": "2026-10-26"
+    "source_note": "Назначение приведено в каталоге сообщества; код опубликован в репозитории NB557.",
+    "updated_at": "2026-10-27"
+  },
+  {
+    "id": "enable-torrents",
+    "name": "Включить поддержку торрентов",
+    "summary": "Включает настройки Lampa, нужные для работы парсера и TorrServer.",
+    "details": "Плагин меняет параметры Lampa для отображения торрент-настроек. Для просмотра нужны отдельные совместимые парсер и TorrServer. Это не готовый источник видео.",
+    "category": "Торренты",
+    "platforms": [
+      "unspecified"
+    ],
+    "platform_labels": [
+      "Устройство не указано"
+    ],
+    "plugin_url": "https://nb557.github.io/plugins/etor.js",
+    "project_url": "https://github.com/nb557/plugins",
+    "evidence_url": "https://tv-ch.ru/lampa-plugins-for-torrent-viewing/",
+    "verification": {
+      "level": "url_checked",
+      "checked_at": "2026-10-27",
+      "device": null,
+      "note": "Прямая ссылка ответила HTTP 200 2026-10-27. Меняет настройки Lampa; сам парсер или TorrServer не устанавливает. Файл и доступные скрипты-зависимости прошли node --check. Плагин не запускался в приложении."
+    },
+    "source_note": "Ссылка и назначение опубликованы в NB557; требования описаны в руководствах по торрент-настройке Lampa.",
+    "updated_at": "2026-10-27"
+  },
+  {
+    "id": "bylampa-cinema",
+    "name": "Cinema",
+    "summary": "Добавляет онлайн-источники Cinema в меню Lampa.",
+    "details": "Расширение из проекта ByLampa. Источники могут зависеть от конкретной сборки Lampa и региона. Файл сильно обфусцирован, независимый аудит кода не проводился.",
+    "category": "Онлайн-просмотр",
+    "platforms": [
+      "unspecified"
+    ],
+    "platform_labels": [
+      "Устройство не указано"
+    ],
+    "plugin_url": "https://bylampa.github.io/cinema.js",
+    "project_url": "https://github.com/bylampa/bylampa.github.io",
+    "evidence_url": "https://lampaguide.com/plugins/cinema",
+    "verification": {
+      "level": "url_checked",
+      "checked_at": "2026-10-27",
+      "device": null,
+      "note": "Ссылка ответила HTTP 200 2026-10-27. Код обфусцирован, его безопасность и совместимость с официальной Lampa не проверялись. Файл и доступные скрипты-зависимости прошли node --check. Плагин не запускался в приложении."
+    },
+    "source_note": "URL указан в репозитории ByLampa и каталоге сообщества; код не проходил независимый аудит.",
+    "updated_at": "2026-10-27"
+  },
+  {
+    "id": "bylampa-interface",
+    "name": "Интерфейс ByLampa",
+    "summary": "Меняет оформление карточек и элементов интерфейса Lampa.",
+    "details": "Внешний интерфейсный плагин. Не ставь одновременно с другими плагинами, которые перестраивают те же карточки. Код обфусцирован, совместимость с каждой сборкой не подтверждена.",
+    "category": "Интерфейс",
+    "platforms": [
+      "unspecified"
+    ],
+    "platform_labels": [
+      "Устройство не указано"
+    ],
+    "plugin_url": "https://bylampa.github.io/interface.js",
+    "project_url": "https://github.com/bylampa/bylampa.github.io",
+    "evidence_url": "https://github.com/bylampa/bylampa.github.io",
+    "verification": {
+      "level": "url_checked",
+      "checked_at": "2026-10-27",
+      "device": null,
+      "note": "Ссылка ответила HTTP 200 2026-10-27. Код обфусцирован; работа и отсутствие конфликтов не тестировались. Некоторые сборки могут блокировать внешние плагины ByLampa. Файл и доступные скрипты-зависимости прошли node --check. Плагин не запускался в приложении."
+    },
+    "source_note": "Файл опубликован в репозитории ByLampa; это не независимый аудит.",
+    "updated_at": "2026-10-27"
+  },
+  {
+    "id": "hack-tv",
+    "name": "Hack TV",
+    "summary": "Добавляет подборку IPTV-каналов в Lampa.",
+    "details": "Источники трансляций размещены у третьих сторон. Их доступность, качество и законность могут отличаться по стране и меняться без предупреждения.",
+    "category": "IPTV и ТВ",
+    "platforms": [
+      "unspecified"
+    ],
+    "platform_labels": [
+      "Устройство не указано"
+    ],
+    "plugin_url": "https://bylampa.github.io/tv.js",
+    "project_url": "https://github.com/bylampa/bylampa.github.io",
+    "evidence_url": "https://lampaguide.com/plugins",
+    "verification": {
+      "level": "url_checked",
+      "checked_at": "2026-10-27",
+      "device": null,
+      "note": "Ссылка ответила HTTP 200 2026-10-27. Наличие работающих каналов и совместимость с официальной Lampa не проверялись; код автора не проходил аудит. Файл и доступные скрипты-зависимости прошли node --check. Плагин не запускался в приложении."
+    },
+    "source_note": "URL и назначение перечислены в проекте ByLampa и каталоге сообщества.",
+    "updated_at": "2026-10-27"
+  },
+  {
+    "id": "jackett-parser-switch",
+    "name": "Переключение парсеров Jackett",
+    "summary": "Упрощает выбор торрент-парсера из доступных адресов Jackett.",
+    "details": "Нужен доступный экземпляр Jackett, а для воспроизведения торрентов обычно нужен TorrServer. Расширение не поднимает сервер и не заменяет настройку сети. Код обфусцирован.",
+    "category": "Торренты",
+    "platforms": [
+      "unspecified"
+    ],
+    "platform_labels": [
+      "Устройство не указано"
+    ],
+    "plugin_url": "https://bylampa.github.io/jackett.js",
+    "project_url": "https://github.com/bylampa/bylampa.github.io",
+    "evidence_url": "https://lampaguide.com/plugins/jackett-integration",
+    "verification": {
+      "level": "url_checked",
+      "checked_at": "2026-10-27",
+      "device": null,
+      "note": "Ссылка ответила HTTP 200 2026-10-27. Нужен настроенный Jackett; запуск в Lampa не проверялся. Код обфусцирован. Файл и доступные скрипты-зависимости прошли node --check. Плагин не запускался в приложении."
+    },
+    "source_note": "Назначение и требования опубликованы в каталоге сообщества, файл размещён проектом ByLampa.",
+    "updated_at": "2026-10-27"
+  },
+  {
+    "id": "pubtorr",
+    "name": "PubTorr",
+    "summary": "Добавляет подборку публичных торрент-парсеров.",
+    "details": "Помогает выбрать парсер для поиска раздач. Работоспособность зависит от самих адресов парсеров; для воспроизведения может понадобиться TorrServer.",
+    "category": "Торренты",
+    "platforms": [
+      "unspecified"
+    ],
+    "platform_labels": [
+      "Устройство не указано"
+    ],
+    "plugin_url": "https://lampame.github.io/main/pubtorr.js",
+    "project_url": "https://lampame.github.io/main/",
+    "evidence_url": "https://lampame.github.io/main/",
+    "verification": {
+      "level": "url_checked",
+      "checked_at": "2026-10-27",
+      "device": null,
+      "note": "Ссылка установки и загружаемый ею скрипт ответили HTTP 200 2026-10-27. Сам поиск раздач и воспроизведение не проверялись. Файл и доступные скрипты-зависимости прошли node --check. Плагин не запускался в приложении."
+    },
+    "source_note": "Плагин есть в каталоге LampaME; проверены и ссылка-обёртка, и адрес скрипта, который она загружает.",
+    "updated_at": "2026-10-27"
+  },
+  {
+    "id": "movie-enhancer",
+    "name": "Movie Enhancer",
+    "summary": "Добавляет кнопки, рейтинги и дополнительные сведения на карточку.",
+    "details": "Плагин LampaME для расширения страницы фильма или сериала. Может конфликтовать с другими плагинами, меняющими карточку.",
+    "category": "Интерфейс",
+    "platforms": [
+      "unspecified"
+    ],
+    "platform_labels": [
+      "Устройство не указано"
+    ],
+    "plugin_url": "https://lampame.github.io/main/lme.js",
+    "project_url": "https://lampame.github.io/main/",
+    "evidence_url": "https://lampame.github.io/main/",
+    "verification": {
+      "level": "url_checked",
+      "checked_at": "2026-10-27",
+      "device": null,
+      "note": "Ссылка установки и основной скрипт ответили HTTP 200 2026-10-27. Карточки в приложении не проверялись. Файл и доступные скрипты-зависимости прошли node --check. Плагин не запускался в приложении."
+    },
+    "source_note": "Описание есть в каталоге LampaME; проверены ссылка-обёртка и загружаемый ею скрипт.",
+    "updated_at": "2026-10-27"
+  },
+  {
+    "id": "new-categories",
+    "name": "Дополнительные категории",
+    "summary": "Добавляет дополнительные разделы и подборки в каталог.",
+    "details": "Плагин LampaME для дополнительных категорий, сетевых подборок и коллекций. Что именно доступно, зависит от источников в конфигурации плагина.",
+    "category": "Каталоги",
+    "platforms": [
+      "unspecified"
+    ],
+    "platform_labels": [
+      "Устройство не указано"
+    ],
+    "plugin_url": "https://lampame.github.io/main/newcategory.js",
+    "project_url": "https://lampame.github.io/main/",
+    "evidence_url": "https://lampame.github.io/main/",
+    "verification": {
+      "level": "url_checked",
+      "checked_at": "2026-10-27",
+      "device": null,
+      "note": "Ссылка установки и основной скрипт ответили HTTP 200 2026-10-27. Доступность отдельных подборок не проверялась. Файл и доступные скрипты-зависимости прошли node --check. Плагин не запускался в приложении."
+    },
+    "source_note": "Описание есть в каталоге LampaME; проверены ссылка-обёртка и загружаемый ею скрипт.",
+    "updated_at": "2026-10-27"
+  },
+  {
+    "id": "tracks-probe",
+    "name": "Tracks Probe",
+    "summary": "Показывает дополнительные сведения об аудиодорожках и субтитрах.",
+    "details": "Плагин LampaME для информации о дорожках и выбора аудио/субтитров. Часть функций может требовать совместимый источник видео или плеер.",
+    "category": "Плеер",
+    "platforms": [
+      "unspecified"
+    ],
+    "platform_labels": [
+      "Устройство не указано"
+    ],
+    "plugin_url": "https://lampame.github.io/main/tracks.js",
+    "project_url": "https://lampame.github.io/main/",
+    "evidence_url": "https://lampame.github.io/main/",
+    "verification": {
+      "level": "url_checked",
+      "checked_at": "2026-10-27",
+      "device": null,
+      "note": "Ссылка установки и основной скрипт ответили HTTP 200 2026-10-27. Выбор дорожек зависит от используемого плеера; не проверялся. Файл и доступные скрипты-зависимости прошли node --check. Плагин не запускался в приложении."
+    },
+    "source_note": "Описание есть в каталоге LampaME; проверены ссылка-обёртка и загружаемый ею скрипт.",
+    "updated_at": "2026-10-27"
+  },
+  {
+    "id": "trakt-tv",
+    "name": "TraktTV",
+    "summary": "Подключает сервис Trakt для списков и истории просмотров.",
+    "details": "Расширение LampaME для авторизации в Trakt, списков и истории. Требуется собственный аккаунт Trakt; перед авторизацией ознакомься с разрешениями плагина.",
+    "category": "Синхронизация",
+    "platforms": [
+      "unspecified"
+    ],
+    "platform_labels": [
+      "Устройство не указано"
+    ],
+    "plugin_url": "https://lampame.github.io/main/trakttv.js",
+    "project_url": "https://lampame.github.io/main/",
+    "evidence_url": "https://lampame.github.io/main/",
+    "verification": {
+      "level": "url_checked",
+      "checked_at": "2026-10-27",
+      "device": null,
+      "note": "Ссылка установки и основной скрипт ответили HTTP 200 2026-10-27. OAuth-вход и синхронизация не тестировались. Файл и доступные скрипты-зависимости прошли node --check. Плагин не запускался в приложении."
+    },
+    "source_note": "Описание есть в каталоге LampaME; проверены ссылка-обёртка и загружаемый ею скрипт.",
+    "updated_at": "2026-10-27"
+  },
+  {
+    "id": "torrserver-tracks",
+    "name": "TS Tracks Probe",
+    "summary": "Показывает сведения о дорожках из TorrServer.",
+    "details": "Вариант Tracks Probe для источников TorrServer. Требуется совместимая связка Lampa и TorrServer.",
+    "category": "Плеер",
+    "platforms": [
+      "unspecified"
+    ],
+    "platform_labels": [
+      "Устройство не указано"
+    ],
+    "plugin_url": "https://lampame.github.io/main/tstracks.js",
+    "project_url": "https://lampame.github.io/main/",
+    "evidence_url": "https://lampame.github.io/main/",
+    "verification": {
+      "level": "url_checked",
+      "checked_at": "2026-10-27",
+      "device": null,
+      "note": "Ссылка установки и основной скрипт ответили HTTP 200 2026-10-27. Проверка требует TorrServer и не проводилась. Файл и доступные скрипты-зависимости прошли node --check. Плагин не запускался в приложении."
+    },
+    "source_note": "Описание есть в каталоге LampaME; проверены ссылка-обёртка и загружаемый ею скрипт.",
+    "updated_at": "2026-10-27"
+  },
+  {
+    "id": "imdb-trailers",
+    "name": "IMDb Trailers",
+    "summary": "Добавляет раздел с популярными трейлерами IMDb.",
+    "details": "Плагин LampaME показывает подборки трейлеров и открывает их в интерфейсе. Доступность видео зависит от внешнего источника и региона.",
+    "category": "Трейлеры",
+    "platforms": [
+      "unspecified"
+    ],
+    "platform_labels": [
+      "Устройство не указано"
+    ],
+    "plugin_url": "https://lampame.github.io/main/timdb.js",
+    "project_url": "https://lampame.github.io/main/",
+    "evidence_url": "https://lampame.github.io/main/",
+    "verification": {
+      "level": "url_checked",
+      "checked_at": "2026-10-27",
+      "device": null,
+      "note": "Ссылка установки и основной скрипт ответили HTTP 200 2026-10-27. Реальное воспроизведение трейлеров не проверялось. Файл и доступные скрипты-зависимости прошли node --check. Плагин не запускался в приложении."
+    },
+    "source_note": "Описание есть в каталоге LampaME; проверены ссылка-обёртка и загружаемый ею скрипт.",
+    "updated_at": "2026-10-27"
+  },
+  {
+    "id": "torrent-downloader",
+    "name": "Torrent Downloader",
+    "summary": "Управляет загрузками на qBittorrent или Transmission из Lampa.",
+    "details": "Нужен собственный qBittorrent или Transmission с доступным Web API. Адрес сервера и данные доступа вводи только после проверки кода и настроек доступа.",
+    "category": "Загрузка",
+    "platforms": [
+      "unspecified"
+    ],
+    "platform_labels": [
+      "Устройство не указано"
+    ],
+    "plugin_url": "https://lampame.github.io/main/torrentmanager.js",
+    "project_url": "https://lampame.github.io/main/",
+    "evidence_url": "https://lampame.github.io/main/",
+    "verification": {
+      "level": "url_checked",
+      "checked_at": "2026-10-27",
+      "device": null,
+      "note": "Ссылка установки и основной скрипт ответили HTTP 200 2026-10-27. Управление сервером и авторизация не тестировались. Файл и доступные скрипты-зависимости прошли node --check. Плагин не запускался в приложении."
+    },
+    "source_note": "Описание есть в каталоге LampaME; проверены ссылка-обёртка и загружаемый ею скрипт.",
+    "updated_at": "2026-10-27"
+  },
+  {
+    "id": "infuse-save",
+    "name": "Infuse Save",
+    "summary": "Передаёт ссылку на торрент-поток в Infuse.",
+    "details": "Плагин LampaME для тех, кто использует Infuse на совместимом устройстве. Наличие Infuse и совместимость конкретного способа передачи проверь отдельно.",
+    "category": "Плеер",
+    "platforms": [
+      "unspecified"
+    ],
+    "platform_labels": [
+      "Устройство не указано"
+    ],
+    "plugin_url": "https://lampame.github.io/main/infuseSave.js",
+    "project_url": "https://lampame.github.io/main/",
+    "evidence_url": "https://lampame.github.io/main/",
+    "verification": {
+      "level": "url_checked",
+      "checked_at": "2026-10-27",
+      "device": null,
+      "note": "Ссылка установки и основной скрипт ответили HTTP 200 2026-10-27. Передача в Infuse и поддержка устройства не тестировались. Файл и доступные скрипты-зависимости прошли node --check. Плагин не запускался в приложении."
+    },
+    "source_note": "Описание есть в каталоге LampaME; проверены ссылка-обёртка и загружаемый ею скрипт.",
+    "updated_at": "2026-10-27"
+  },
+  {
+    "id": "concert-torr-search",
+    "name": "Concert Torr Search",
+    "summary": "Добавляет отдельный поиск торрентов для концертных записей.",
+    "details": "Плагин LampaME для специализированного поиска. Результат зависит от доступности и настройки источников раздач.",
+    "category": "Торренты",
+    "platforms": [
+      "unspecified"
+    ],
+    "platform_labels": [
+      "Устройство не указано"
+    ],
+    "plugin_url": "https://lampame.github.io/main/cts.js",
+    "project_url": "https://lampame.github.io/main/",
+    "evidence_url": "https://lampame.github.io/main/",
+    "verification": {
+      "level": "url_checked",
+      "checked_at": "2026-10-27",
+      "device": null,
+      "note": "Ссылка установки и основной скрипт ответили HTTP 200 2026-10-27. Поиск и воспроизведение не тестировались. Файл и доступные скрипты-зависимости прошли node --check. Плагин не запускался в приложении."
+    },
+    "source_note": "Описание есть в каталоге LampaME; проверены ссылка-обёртка и загружаемый ею скрипт.",
+    "updated_at": "2026-10-27"
+  },
+  {
+    "id": "ru-lampa",
+    "name": "RU Lampa",
+    "summary": "Добавляет отдельные ряды русских фильмов и сериалов.",
+    "details": "Строит подборки по данным TMDB, языку и региону. Автор указывает поддержку Web, Android TV и webOS; выдача зависит от TMDB и доступности источников.",
+    "category": "Подборки",
+    "platforms": [
+      "web",
+      "android_tv",
+      "lg_webos"
+    ],
+    "platform_labels": [
+      "Web",
+      "Android TV",
+      "LG webOS"
+    ],
+    "plugin_url": "https://evgenkotta.github.io/ru-lampa/rus_actual.js",
+    "project_url": "https://github.com/evgenkotta/ru-lampa",
+    "evidence_url": "https://github.com/evgenkotta/ru-lampa",
+    "verification": {
+      "level": "url_checked",
+      "checked_at": "2026-10-27",
+      "device": null,
+      "note": "Ссылка ответила HTTP 200 2026-10-27. Автор указывает Web, Android TV и webOS. Совместимость и выдача на устройстве Setup Lab не проверялись. Файл и доступные скрипты-зависимости прошли node --check. Плагин не запускался в приложении."
+    },
+    "source_note": "Совместимость и назначение заявлены автором в README репозитория.",
+    "updated_at": "2026-10-27"
+  },
+  {
+    "id": "yummy-anime",
+    "name": "YummyAnime",
+    "summary": "Добавляет аниме-каталог, расписание, рейтинги и списки.",
+    "details": "Официальное расширение YummyAnime. Для профиля, избранного, истории и синхронизации нужен аккаунт сервиса. Стабильная ссылка опубликована в README автора.",
+    "category": "Аниме",
+    "platforms": [
+      "android_tv",
+      "lg_webos"
+    ],
+    "platform_labels": [
+      "Android TV",
+      "LG webOS"
+    ],
+    "plugin_url": "https://yummyanime.github.io/yummy-lampa-plugin/stable/index.js",
+    "project_url": "https://github.com/yummyanime/yummy-lampa-plugin",
+    "evidence_url": "https://github.com/yummyanime/yummy-lampa-plugin",
+    "verification": {
+      "level": "url_checked",
+      "checked_at": "2026-10-27",
+      "device": null,
+      "note": "Стабильная ссылка ответила HTTP 200 2026-10-27. В репозитории автора прошли проверки синтаксиса и 104 контрактных теста. Реальный запуск Setup Lab на телевизоре не проводился. Файл и доступные скрипты-зависимости прошли node --check. Плагин не запускался в приложении."
+    },
+    "source_note": "Версия, стабильная ссылка и совместимость описаны автором. Проверки проекта запускались отдельно от Lampa на устройстве.",
+    "updated_at": "2026-10-27"
+  },
+  {
+    "id": "continue-watching",
+    "name": "Продолжить просмотр",
+    "summary": "Собирает историю просмотра в отдельный ряд на главной.",
+    "details": "Показывает прогресс и эпизод на карточках. Для синхронизированной истории между устройствами используется шкала CUB; способ просмотра запоминается локально.",
+    "category": "Каталоги",
+    "platforms": [
+      "unspecified"
+    ],
+    "platform_labels": [
+      "Устройство не указано"
+    ],
+    "plugin_url": "https://diviper.github.io/lampa-plugins/continue.js",
+    "project_url": "https://github.com/diviper/lampa-plugins",
+    "evidence_url": "https://github.com/diviper/lampa-plugins",
+    "verification": {
+      "level": "url_checked",
+      "checked_at": "2026-10-27",
+      "device": null,
+      "note": "Ссылка ответила HTTP 200 2026-10-27. В README автора указана зависимость синхронизированной истории от CUB. В приложении не проверялось. Файл и доступные скрипты-зависимости прошли node --check. Плагин не запускался в приложении."
+    },
+    "source_note": "Описание, требования и URL опубликованы в README проекта; последние изменения в репозитории были в сентябре 2026.",
+    "updated_at": "2026-10-27"
+  },
+  {
+    "id": "stream-stats",
+    "name": "Статистика потока",
+    "summary": "Показывает технические данные воспроизведения для поиска причин торможения.",
+    "details": "Диагностический оверлей сообщает о разрешении и буферизации потока. Само видео не ускоряет и не исправляет сеть.",
+    "category": "Диагностика",
+    "platforms": [
+      "unspecified"
+    ],
+    "platform_labels": [
+      "Устройство не указано"
+    ],
+    "plugin_url": "https://diviper.github.io/lampa-plugins/stream-stats.js",
+    "project_url": "https://github.com/diviper/lampa-plugins",
+    "evidence_url": "https://github.com/diviper/lampa-plugins",
+    "verification": {
+      "level": "url_checked",
+      "checked_at": "2026-10-27",
+      "device": null,
+      "note": "Ссылка ответила HTTP 200 2026-10-27. Скрипт загружался для проверки файла, диагностический оверлей в плеере не запускался. Файл и доступные скрипты-зависимости прошли node --check. Плагин не запускался в приложении."
+    },
+    "source_note": "Назначение и настройки опубликованы в README проекта; последние изменения в репозитории были в сентябре 2026.",
+    "updated_at": "2026-10-27"
+  },
+  {
+    "id": "diviper-trailers",
+    "name": "Трейлеры",
+    "summary": "Добавляет меню с подборками новых и ожидаемых трейлеров.",
+    "details": "Плагин использует каталоги TMDB для свежих и ожидаемых трейлеров. Фактическое воспроизведение зависит от плеера и источника видео.",
+    "category": "Трейлеры",
+    "platforms": [
+      "unspecified"
+    ],
+    "platform_labels": [
+      "Устройство не указано"
+    ],
+    "plugin_url": "https://diviper.github.io/lampa-plugins/trailers.js",
+    "project_url": "https://github.com/diviper/lampa-plugins",
+    "evidence_url": "https://github.com/diviper/lampa-plugins",
+    "verification": {
+      "level": "url_checked",
+      "checked_at": "2026-10-27",
+      "device": null,
+      "note": "Ссылка ответила HTTP 200 2026-10-27. Доступность каталога и воспроизведение трейлеров не тестировались. Файл и доступные скрипты-зависимости прошли node --check. Плагин не запускался в приложении."
+    },
+    "source_note": "Описание и URL опубликованы в README проекта; последние изменения в репозитории были в сентябре 2026.",
+    "updated_at": "2026-10-27"
+  },
+  {
+    "id": "torrent-list-sort",
+    "name": "Сортировка списка торрентов",
+    "summary": "Меняет порядок раздач с учётом качества и параметров списка.",
+    "details": "Помогает выбрать нужный файл из результатов поиска. Требует рабочего торрент-парсера; конкретные правила оценки смотри в исходном коде автора.",
+    "category": "Торренты",
+    "platforms": [
+      "unspecified"
+    ],
+    "platform_labels": [
+      "Устройство не указано"
+    ],
+    "plugin_url": "https://diviper.github.io/lampa-plugins/torrents-sort.js",
+    "project_url": "https://github.com/diviper/lampa-plugins",
+    "evidence_url": "https://github.com/diviper/lampa-plugins",
+    "verification": {
+      "level": "url_checked",
+      "checked_at": "2026-10-27",
+      "device": null,
+      "note": "Ссылка ответила HTTP 200 2026-10-27. Сортировка зависит от формата данных парсера и не проверялась на устройстве. Файл и доступные скрипты-зависимости прошли node --check. Плагин не запускался в приложении."
+    },
+    "source_note": "Описание и URL опубликованы в README проекта; последние изменения в репозитории были в сентябре 2026.",
+    "updated_at": "2026-10-27"
+  },
+  {
+    "id": "saved-filters",
+    "name": "Сохранённые фильтры",
+    "summary": "Сохраняет выбранные фильтры каталога, чтобы открыть их снова.",
+    "details": "Можно назвать фильтр, применить его повторно или отредактировать. Репозиторий автора содержит тесты; они проверяют логику плагина, но не совместимость с моделью телевизора.",
+    "category": "Фильтры",
+    "platforms": [
+      "unspecified"
+    ],
+    "platform_labels": [
+      "Устройство не указано"
+    ],
+    "plugin_url": "https://yevgenyfarber.github.io/lampa-saved-filters/saved_filters.js",
+    "project_url": "https://github.com/YevgenyFarber/lampa-saved-filters",
+    "evidence_url": "https://github.com/YevgenyFarber/lampa-saved-filters",
+    "verification": {
+      "level": "url_checked",
+      "checked_at": "2026-10-27",
+      "device": null,
+      "note": "Ссылка ответила HTTP 200 2026-10-27. Тест автора node test.js прошёл. Запуск внутри Lampa на телевизоре не проверялся. Файл и доступные скрипты-зависимости прошли node --check. Плагин не запускался в приложении."
+    },
+    "source_note": "Назначение, установка и тест описаны автором; последний коммит в репозитории от 16.10.2026.",
+    "updated_at": "2026-10-27"
+  },
+  {
+    "id": "top-catalog-trackers",
+    "name": "Топ каталога и трекеров",
+    "summary": "Добавляет подборки популярных и высоко оценённых фильмов.",
+    "details": "Плагин также показывает топы торрент-трекеров, но для этой части нужен сервер проекта. Перед установкой посмотри требования и сетевые адреса в README автора.",
+    "category": "Подборки",
+    "platforms": [
+      "unspecified"
+    ],
+    "platform_labels": [
+      "Устройство не указано"
+    ],
+    "plugin_url": "https://0x3654.github.io/lampa-plugins/top.js",
+    "project_url": "https://github.com/0x3654/lampa-plugins",
+    "evidence_url": "https://github.com/0x3654/lampa-plugins",
+    "verification": {
+      "level": "url_checked",
+      "checked_at": "2026-10-27",
+      "device": null,
+      "note": "Ссылка ответила HTTP 200 2026-10-27. Трекерная часть зависит от внешнего сервера автора; на устройстве Setup Lab не проверялось. Файл и доступные скрипты-зависимости прошли node --check. Плагин не запускался в приложении."
+    },
+    "source_note": "Описание и ограничения перечислены в README проекта; последние изменения были 25.10.2026.",
+    "updated_at": "2026-10-27"
+  },
+  {
+    "id": "top-bar-player",
+    "name": "Переключатель плеера в шапке",
+    "summary": "Добавляет в верхнюю панель быстрый переход между онлайн, IPTV и торрент-разделом.",
+    "details": "Небольшой плагин управления интерфейсом от TviGl. Может зависеть от того, какие источники и разделы уже настроены в Lampa.",
+    "category": "Управление",
+    "platforms": [
+      "unspecified"
+    ],
+    "platform_labels": [
+      "Устройство не указано"
+    ],
+    "plugin_url": "https://tvigl.github.io/plugins/top_bar.js",
+    "project_url": "https://github.com/tvigl/plugins",
+    "evidence_url": "https://github.com/tvigl/plugins",
+    "verification": {
+      "level": "url_checked",
+      "checked_at": "2026-10-27",
+      "device": null,
+      "note": "Ссылка ответила HTTP 200 2026-10-27. Наличие нужных разделов зависит от установленных источников; запуск на устройстве не проводился. Файл и доступные скрипты-зависимости прошли node --check. Плагин не запускался в приложении."
+    },
+    "source_note": "Файл и описание проекта опубликованы в репозитории TviGl.",
+    "updated_at": "2026-10-27"
+  },
+  {
+    "id": "lampaplugins-store",
+    "name": "LampaPlugins Store",
+    "summary": "Добавляет в настройки Lampa каталог сторонних расширений.",
+    "details": "Это установщик каталога, а не одно отдельное расширение. Магазин показывает плагины авторов и ставит выбранные URL. Перед установкой каждого расширения проверь автора и код.",
+    "category": "Магазины",
+    "platforms": [
+      "unspecified"
+    ],
+    "platform_labels": [
+      "Устройство не указано"
+    ],
+    "plugin_url": "https://lampaplugins.github.io/store/store.js",
+    "project_url": "https://github.com/lampaplugins/store",
+    "evidence_url": "https://github.com/lampaplugins/store",
+    "verification": {
+      "level": "url_checked",
+      "checked_at": "2026-10-27",
+      "device": null,
+      "note": "Ссылка и список extensions.json ответили HTTP 200 2026-10-27. Репозиторий обновлял каталог 20.10.2026. Магазин может устанавливать сторонний код, который не проверен Setup Lab. Файл и доступные скрипты-зависимости прошли node --check. Плагин не запускался в приложении."
+    },
+    "source_note": "Описание, исходники и каталог есть в репозитории; последнее обновление extensions.json от 20.10.2026.",
+    "updated_at": "2026-10-27"
   }
 ]

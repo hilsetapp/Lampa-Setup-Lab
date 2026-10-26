@@ -9,7 +9,7 @@ A device-oriented directory of Lampa extensions. Every entry shows where its inf
 ## Included
 
 - Searchable extension directory.
-- Filters for device and verification level.
+- Filters for device, category and verification level.
 - Separate pages for Samsung Tizen, LG webOS and Android TV.
 - A beginner-friendly installation guide.
 - A four-step evidence scale: author-reported, URL checked, launched in Lampa, tested on a device.
@@ -41,7 +41,7 @@ The validator is offline. It checks the data structure but does not fetch extens
 - **Loaded in Lampa** means a test confirmed that Lampa loaded the extension.
 - **Device tested** means the test passed on the named physical device and OS version.
 
-The current entries are sourced from authors' pages and community catalogs. No independent TV runs have been performed yet, so entries are marked **author-reported**.
+On 2026-10-27, all 33 direct install URLs and the secondary scripts loaded by LampaME wrappers returned HTTP 200. The JavaScript files passed a syntax check. This confirms reachability and parseable code, not successful operation in Lampa. Setup Lab has not launched the plugins in the app or tested them on televisions.
 
 ## License
 
